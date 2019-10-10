@@ -56,6 +56,7 @@ while True:
 
     datadictionary = data["data"]["children"][0]
     title = str(datadictionary["data"]["title"])
+    posturl = str(datadictionary["data"]["url"])
 
     titleformatted = None
 
@@ -72,6 +73,7 @@ while True:
 
 
         print(titleformatted)
+        print(posturl)
         print()
     else:
         print('No new posts.\n')
